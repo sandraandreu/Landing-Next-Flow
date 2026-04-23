@@ -1,0 +1,75 @@
+:root {
+  // ── Colors ────────────────────────────────────────────────────────────────
+
+  // Backgrounds
+  --color-background:        #ffffff;
+  --color-background-subtle: #f2f4f6;
+
+  // Brand primary
+  --color-primary:           #1e3a5f;
+  --color-primary-light:     #2a4f7f;
+  --color-primary-dark:      #152c48;
+
+  // Accent
+  --color-accent:            #2e86c1;
+  --color-accent-light:      #5da9d5;
+  --color-accent-dark:       #1a6a9e;
+
+  // Text
+  --color-text-primary:      #1a1a2e;
+  --color-text-secondary:    #4a4a5a;
+  --color-text-on-primary:   #ffffff;
+  --color-text-on-accent:    #ffffff;
+
+  // Neutrals
+  --color-neutral:           #f2f4f6;
+  --color-neutral-200:       #d8dce2;
+  --color-neutral-300:       #b0b7c0;
+
+  // Semantic
+  --color-success:           #27ae60;
+  --color-warning:           #f39c12;
+  --color-error:             #e74c3c;
+
+  // ── Spacing ───────────────────────────────────────────────────────────────
+
+  --space-2xs:  2px;
+  --space-xs:   4px;
+  --space-sm:   8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  --space-5xl: 128px;
+
+  // ── Border radius ─────────────────────────────────────────────────────────
+
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;
+  --radius-full: 9999px;
+
+  // ── Typography ────────────────────────────────────────────────────────────
+
+  --font-family: 'Inter', sans-serif;
+
+  // Font sizes
+  --font-size-h1:      64px;
+  --font-size-h2:      48px;
+  --font-size-h3:      36px;
+  --font-size-h4:      28px;
+  --font-size-h5:      22px;
+  --font-size-h6:      18px;
+  --font-size-body-lg: 18px;
+  --font-size-body:    16px;
+  --font-size-body-sm: 14px;
+  --font-size-caption: 12px;
+  --font-size-label:   16px;
+
+  // Font weights
+  --font-weight-regular:   400;
+  --font-weight-medium:    500;
+  --font-weight-semibold:  600;
+}
