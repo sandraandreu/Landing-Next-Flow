@@ -1,0 +1,57 @@
+@use "../library" as *;
+
+.product-video {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: var(--space-4xl);
+  padding-bottom: var(--space-4xl);
+  @include center-content(900px);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image:
+      linear-gradient(to right, rgba(0, 0, 0, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+    background-size: 130px 45px;
+    box-shadow: inset 0 0 120px 90px var(--color-background);
+  }
+
+  &__screenshot {
+    width: 125%;
+    height: auto;
+  }
+
+  &__play,
+  &__chat {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-gray-900);
+    border-radius: var(--radius-full);
+    border: none;
+    padding: var(--space-xl);
+    cursor: pointer;
+
+    img {
+      width: var(--size-32);
+      height: var(--size-32);
+    }
+  }
+
+  &__play {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__chat {
+    right: 0;
+    top: 25%;
+  }
+}
