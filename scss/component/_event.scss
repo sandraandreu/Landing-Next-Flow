@@ -1,0 +1,29 @@
+.event-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-md);
+  border: 1px solid var(--color-neutral-200);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+
+  &__badge {
+    background-color: var(--color-text-primary);
+    color: var(--color-text-on-primary);
+    font-size: var(--font-size-caption);
+    font-weight: var(--font-weight-semibold);
+    padding: var(--space-2xs) var(--space-sm);
+    border-radius: var(--radius-full);
+  }
+
+  &__text {
+    font-size: var(--font-size-body-sm);
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-medium);
+  }
+
+  &__arrow {
+    font-size: var(--font-size-body-sm);
+    color: var(--color-text-secondary);
+  }
+}

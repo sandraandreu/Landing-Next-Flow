@@ -1,0 +1,30 @@
+@use "../library" as *;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: var(--space-5xl);
+  padding-bottom: var(--space-4xl);
+  @include center-content(900px);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+    max-width: 900px;
+  }
+
+  &__subtitle {
+    max-width: 480px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-top: var(--space-xs);
+  }
+}
