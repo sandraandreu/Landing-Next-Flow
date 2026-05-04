@@ -1,5 +1,9 @@
-
 @mixin center-content($max-width) {
-  padding-left: calc(100% - $max-width) / 2;
-  padding-right: calc(100% - $max-width) / 2;
+  padding-inline: calc((100% - #{$max-width}) / 2);
+}
+
+@mixin breakpoint($min-width) {
+  @media (min-width: #{$min-width}) {
+    @content;
+  }
 }
