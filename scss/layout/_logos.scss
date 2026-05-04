@@ -1,0 +1,31 @@
+@use "../library" as *;
+
+.product-logos {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--space-2xl);
+  padding-bottom: var(--space-2xl);
+  @include center-content(1200px);
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-2xl);
+
+    img {
+      width: 120px;
+      height: 40px;
+      object-fit: contain;
+      opacity: 0.6;
+      filter: grayscale(1);
+      transition: opacity 0.2s ease, filter 0.2s ease;
+
+      &:hover {
+        opacity: 1;
+        filter: grayscale(0);
+      }
+    }
+  }
+}
